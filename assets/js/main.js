@@ -31,7 +31,7 @@ function refreshPage(){
 }
 
 
-
+/*
 
 const sr = ScrollReveal({
     origin: 'top',
@@ -64,7 +64,7 @@ sr.reveal('.work__img',{interval: 200});
 
 sr.reveal('.contact__input',{interval: 200}); 
 
-
+*/
 /*Slide show*/
 var slideIndex = 1;
 showSlides(slideIndex);
