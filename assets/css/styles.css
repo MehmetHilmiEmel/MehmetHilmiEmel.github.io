@@ -10,6 +10,14 @@
 :root{
   --first-color: #54228d; /*#4070F4*/
   --second-color: #0E2431;
+  --third-color: #0E2431;
+  --fourth-color:#fff;
+
+  
+}
+.dark-theme{
+  --third-color: #fff;
+  --fourth-color:#0E2431;
 }
 
 /*===== Fuente y tipografia =====*/
@@ -56,7 +64,8 @@ body{
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  color: var(--second-color);
+  color: var(--third-color);
+  background-color:var(--fourth-color);
 }
 h1,h2,p{
   margin: 0;
@@ -73,6 +82,10 @@ img{
   max-width: 100%;
   height: auto;
   display: block;
+}
+#icon{
+  width:30px;
+  cursor: pointer;
 }
 
 
@@ -117,7 +130,7 @@ img{
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #fff;
+  background-color: var(--second-color);
   box-shadow: 0 1px 4px rgba(146,161,176,.15);
 }
 
@@ -161,7 +174,7 @@ img{
   background-color: var(--first-color);
 }
 .nav__logo{
-  color: var(--second-color);
+  color: white;
 }
 .nav__toggle{
   color: var(--second-color);
@@ -417,7 +430,7 @@ img{
     display: none;
   }
   .nav__link{
-    color: var(--second-color);
+    color: white;
   }
 
   .home{
