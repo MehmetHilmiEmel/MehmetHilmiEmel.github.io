@@ -31,7 +31,20 @@ function refreshPage(){
 }
 
 
+
+
+var icon= document.getElementById("icon");
+icon.onclick= function (){
+  document.body.classList.toggle("dark-theme");
+  if(document.body.classList.contains("dark-theme")){
+    icon.src="assets/img/sun.png";
+  }else{
+    icon.src="assets/img/moon.png";
+  }
+}
+
 /*
+
 
 const sr = ScrollReveal({
     origin: 'top',
@@ -51,7 +64,6 @@ sr.reveal('.home__social-icon',{ interval: 200});
 sr.reveal('.about__img',{}); 
 sr.reveal('.about__subtitle',{delay: 400}); 
 sr.reveal('.about__text',{delay: 400}); 
-
 
 sr.reveal('.skills__subtitle',{}); 
 sr.reveal('.skills__text',{}); 
